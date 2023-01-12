@@ -30,6 +30,7 @@
   list-style: none;
 }
 .header__item {
+  text-decoration: none;
   margin-right: 37px;
   font-weight: 400;
   font-size: 20px;
@@ -38,9 +39,7 @@
 }
 .header__box {
   display: flex;
-  // flex-direction: column;
   align-items: center;
-  // justify-content: center;
 }
 .header__box-tel {
   display: flex;

@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>onveta</title>
 
-    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
-    <link rel="stylesheet" href="/css/main-min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    
   </head>
   <body>
     <header class="site-header" id="header">
       <div class="container">
         <div class="header">
-          <a class="header__logo-href" href="#">
+          <a class="header__logo-href" href="/index.html">
             <img
               class="header__logo-img"
               src="/images/logo.svg"
@@ -21,11 +21,25 @@
             />
           </a>
           <ul class="header__list">
-            <li class="header__item">Bosh Sahifa</li>
-            <li class="header__item">Xizmatlar</li>
-            <li class="header__item">Portfolio</li>
-            <li class="header__item">Biz haqimizda</li>
-            <li class="header__item">Aloqa</li>
+            <li >
+              <a class="header__item" href="#hero">Bosh Sahifa</a>
+              
+            
+            </li>
+            <li >
+              <a class="header__item" href="#xizmatlar">Xizmatlar</a>
+              </li>
+            <li >
+              <a class="header__item" href="#Portfolio">Portfolio</a>
+          </li>
+            <li >
+              <a class="header__item" href="#bizHaqimizda">Biz haqimizda</a>
+              </li>
+            <li  >
+              
+              <a class="header__item" href="#aloqa">Aloqa  </a>
+
+              </li>
           </ul>
           <div class="header__box">
             <button class="header__language-button">Uzbek tili</button>
@@ -45,8 +59,9 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="ex1 hero__mini-animatiya-box"></div>
+      <section class="hero" id="hero">
+        <div class=" hero__mini-animatiya-big-box"></div>
+        <div class=" hero__mini-animatiya-box"></div>
 
         <div class="container">
           <div class="hero__box">
@@ -74,7 +89,7 @@
                 Yil <br />
                 biznesda
               </li>
-              <li class="qisqacha__items">Mutahasislar</li>
+              <li class="qisqacha__items">Mutahasislar <span class="qisqacha__spancha">ko’proq</span> </li>
               <li class="qisqacha__items">
                 Xizmarlar <br />
                 uchun kafolat
@@ -82,6 +97,7 @@
               <li class="qisqacha__items">
                 Muvaffaqiyatli <br />
                 loyihalar
+                <span class="qisqacha__spancha">ko’proq</span>
               </li>
             </ul>
           </div>
@@ -92,19 +108,19 @@
           <h3 class="hizmatlar__big-text">Bizning Xizmatlarimiz</h3>
 
           <ul class="xizmatlar__list">
-            <li class="xizmatlar__itms aktiv-class">
+            <li class="xizmatlar__itms aktiv-class" value=1>
               Mobile <br />
               Ilovalar
             </li>
-            <li class="xizmatlar__itms">
+            <li class="xizmatlar__itms" value=2 >
               Mobile <br />
               Dizayn
             </li>
-            <li class="xizmatlar__itms">
+            <li class="xizmatlar__itms" value=3>
               Web <br />
               Saytlar
             </li>
-            <li class="xizmatlar__itms">
+            <li class="xizmatlar__itms" value=4>
               Web <br />
               Dizayn
             </li>

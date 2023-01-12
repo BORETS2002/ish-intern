@@ -47,6 +47,7 @@
   align-items: center;
 }
 .qisqacha__items {
+  position: relative;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -76,15 +77,14 @@
   font-size: 48px;
   line-height: 148.52%;
   color: #ffffff;
-
   background: #ff552d;
   box-shadow: 0px 0px 26px 2px #ffffff;
   border-radius: 330px;
 }
 .qisqacha__items:nth-child(2):before {
-  padding-top: 18px;
+  padding-top: 8px;
   margin-bottom: 47px;
-  content: "8 +";
+  content: "8";
 }
 .qisqacha__items:nth-child(3):before {
   padding-top: 25px;
@@ -92,7 +92,19 @@
   font-size: 36px;
 }
 .qisqacha__items:nth-child(4):before {
-  padding-top: 20px;
-  content: " 10+ ";
+  padding-top: 10px;
+  content: " 10+";
   // font-size: 18px;
+}
+.qisqacha__spancha {
+  position: absolute;
+  top: 64px;
+  right: calc(25%);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 148.52%;
+  text-align: center;
+
+  color: #ffffff;
 }
