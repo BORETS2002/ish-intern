@@ -1,0 +1,18 @@
+.food__header {
+  padding: 70px 0;
+  background: #000000;
+  border-bottom: 2px solid #fff;
+}
+
+.food__header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.food__header__items {
+  margin-right: 32px;
+}
+.food__header-img {
+  width: 191px;
+}

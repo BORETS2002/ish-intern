@@ -1,0 +1,98 @@
+.qisqacha {
+  width: 100%;
+  position: absolute;
+  top: 800px;
+  padding-top: 73px;
+  padding-bottom: 238px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 85, 45, 0) 0%,
+    rgba(255, 85, 45, 0.486) 25%,
+    rgba(255, 85, 45, 0.552) 76.04%,
+    rgba(255, 85, 45, 0.036) 98.49%
+  );
+}
+
+.qisqacha__big-text {
+  margin: 0;
+  margin-bottom: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 148.52%;
+  color: #2d2d2d;
+  text-align: center;
+}
+.qisqacha__mini-box {
+  width: 532px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.qisqacha__mini-text {
+  margin: 0;
+  margin-bottom: 134px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 148.52%;
+  color: #2d2d2d;
+}
+.qisqacha__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qisqacha__items {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 124.02%;
+  text-align: center;
+  color: #ffffff;
+  &:nth-child(2) {
+    margin-right: 150px;
+    margin-left: 163px;
+  }
+  &:nth-child(3) {
+    margin-right: 148px;
+  }
+}
+.qisqacha__items::before {
+  content: "2+";
+  display: block;
+  width: 109px;
+  height: 109px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+  padding-top: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 148.52%;
+  color: #ffffff;
+
+  background: #ff552d;
+  box-shadow: 0px 0px 26px 2px #ffffff;
+  border-radius: 330px;
+}
+.qisqacha__items:nth-child(2):before {
+  padding-top: 18px;
+  margin-bottom: 47px;
+  content: "8 +";
+}
+.qisqacha__items:nth-child(3):before {
+  padding-top: 25px;
+  content: " 100% ";
+  font-size: 36px;
+}
+.qisqacha__items:nth-child(4):before {
+  padding-top: 20px;
+  content: " 10+ ";
+  // font-size: 18px;
+}

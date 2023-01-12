@@ -1,1 +1,135 @@
+.footer {
+  padding-top: 157px;
+  padding-bottom: 40px;
+  background: #000000;
+}
+.footer__big-Bos {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+.footer__logo-box {
+  width: 200px;
+  margin-right: 175px;
+}
+.footer__logo {
+  width: 145px;
+  margin-bottom: 33px;
+}
 
+.footer__email {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148.52%;
+  color: #a6a6a6;
+  text-decoration: none;
+}
+.footer__adres {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148.52%;
+  color: #a6a6a6;
+  text-decoration: none;
+}
+.footer__icon-list {
+  list-style: none;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footer__icon-items {
+  margin-right: 16px;
+}
+
+.footer__kompaniya {
+  display: flex;
+  flex-direction: column;
+  margin-right: 153px;
+}
+.footer__kompaniya-text {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 148.52%;
+  color: #f2f2f2;
+}
+.footer__kompaniya-href {
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148.52%;
+  color: #a6a6a6;
+}
+
+.footer__xizmatlar {
+  margin-right: 168px;
+}
+.footer__xizmatlar-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 148.52%;
+  color: #f2f2f2;
+}
+.footr__list {
+  text-decoration: none;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+}
+.footer__items {
+  margin-bottom: 10px;
+}
+.footer__items-href {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148.52%;
+  text-decoration: none;
+  color: #a6a6a6;
+}
+
+.footer__qushimcha {
+}
+.footer__qushimcha-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 148.52%;
+  color: #f2f2f2;
+}
+.footer__qushimcha-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+.footer__qushimcha-items {
+  margin-bottom: 10px;
+}
+.footer__buton {
+  display: block;
+  width: 58px;
+  height: 58px;
+  margin-left: auto;
+  background: #ff552d;
+  box-shadow: 0px 0px 18px #ff552d;
+  border: none;
+  border-radius: 50%;
+  background-image: url("/images/strelka-tepaga.svg");
+  background-repeat: no-repeat;
+  background-size: 23px 18px;
+  background-position: center;
+}
+
+.footer__after {
+  text-align: center;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 148.52%;
+  color: #a6a6a6;
+}

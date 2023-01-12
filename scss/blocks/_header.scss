@@ -1,0 +1,101 @@
+.site-header {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 174, 26, 0.3) 100%
+  );
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header__logo-href {
+  display: inline-block;
+  margin-right: 64px;
+}
+.header__logo-img {
+  max-width: 185px;
+}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header__item {
+  margin-right: 37px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.header__box {
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+}
+.header__box-tel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__box-before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__box-before::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 38px;
+  margin-right: 16px;
+  background-image: url("/images/tel.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header__murojat {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #737373;
+}
+.header__language-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 37px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  border: none;
+  background: none;
+}
+.header__language-button::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  background-image: url("/images/bayroq-uzbekistan.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header__tel {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #252525;
+  text-decoration: none;
+}

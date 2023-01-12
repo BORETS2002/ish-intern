@@ -1,0 +1,202 @@
+.xizmatlar {
+  margin-top: 48px;
+
+  background-image: url("/images/xizmatlar-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.xizmatlar__box {
+  padding: 47px 0;
+  padding-right: 114px;
+  margin-right: 110px;
+  padding-left: 102px;
+  margin-bottom: 58px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 2px 3px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 50px 50px 0px;
+}
+.hizmatlar__big-text {
+  margin: 0;
+
+  font-style: normal;
+
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 148.52%;
+  text-align: center;
+  color: #ff552d;
+}
+.xizmatlar__list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  margin-top: 60px;
+  margin-left: 58px;
+  margin-bottom: 31px;
+  padding: 0;
+  list-style: none;
+}
+.xizmatlar__itms {
+  padding: 5px 47px 24px 47px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 148.52%;
+  text-align: center;
+  color: #000000;
+
+  &::before {
+    content: "";
+
+    width: 140px;
+    height: 140px;
+    margin-left: 50px;
+
+    margin-bottom: 20px;
+    display: block;
+    background-image: url("/images/tel-sensr.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:not(:last-child) {
+    margin-right: 22px;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 4px 4px rgba(255, 85, 45, 0.25);
+    border-radius: 33px;
+  }
+  &:active {
+    box-shadow: 5px 6px 8px rgba(255, 85, 45, 0.25);
+  }
+}
+
+.aktiv-class {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 4px 4px rgba(255, 85, 45, 0.25);
+  border-radius: 33px;
+}
+
+.xizmatlar__itms {
+  &:nth-child(2):before {
+    margin-left: 0;
+    background-image: url("/images/qalam.svg");
+  }
+  &:nth-child(3):before {
+    margin-left: 0;
+
+    background-image: url("/images/kalendar.svg");
+  }
+  &:nth-child(4):before {
+    margin-left: 0;
+
+    background-image: url("/images/shakl.svg");
+  }
+}
+.xizmatlar__box-text {
+  max-width: 1009px;
+  margin-left: 110px;
+}
+.xizmatlar__mobil-ilova {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 148.52%;
+  color: #000000;
+}
+.xizmatlar__mini-texr {
+  margin: 0;
+  margin-bottom: 42px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 148.52%;
+  color: #6b6b6b;
+}
+.xizmatlar__button {
+  display: block;
+  width: 375px;
+  margin-left: auto;
+  padding: 22px 66px;
+  background: #ec1c24;
+  border-radius: 69px;
+  border: none;
+  color: #fff;
+}
+
+.portfolio {
+  padding: 40px 0;
+  padding-left: 85px;
+  margin-left: 110px;
+  margin-bottom: 58px;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 2px 3px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 50px 0px 0px 50px;
+}
+.prtfolio__box {
+}
+.portfolio__big-text {
+  margin: 0;
+  margin-bottom: 69px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 148.52%;
+  color: #ff552d;
+  text-align: center;
+}
+
+.portfolio__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  overflow-x: hidden;
+
+  scroll-snap-align: inherit;
+}
+.portfolio__items {
+  margin-right: 47px;
+}
+.portfolio__img {
+  width: 480px;
+  height: 243px;
+}
+.portfolio__box-text {
+  width: 480px;
+}
+
+.portfolio__big-texts {
+  display: inline-block;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 148.52%;
+  color: #2d2d2d;
+}
+.portfolio__smaill-texts {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 148.52%;
+  color: #6b6b6b;
+}
+.pachination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pachination__span {
+  width: 18px;
+  height: 18px;
+  margin-top: 105px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: #2d2d2d;
+}
+.color-span {
+  background: #ff552d;
+}
