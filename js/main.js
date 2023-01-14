@@ -36,3 +36,13 @@ elList.addEventListener("click", (evt) => {
   }
   // console.log(evt.target.value);
 });
+
+const elSiteheaderToggleBtn = document.querySelector(".btn-open");
+const elHeader = document.querySelector(".site-header");
+const elsiteNav = document.querySelector(".sitenav");
+console.log(elSiteheaderToggleBtn);
+
+elSiteheaderToggleBtn.addEventListener("click", function () {
+  elHeader.classList.toggle("site-header__open");
+  elsiteNav.classList.toggle("site-hader__open");
+});

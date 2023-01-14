@@ -54,3 +54,63 @@
   line-height: 148.52%;
   color: #ffffff;
 }
+@media only screen and (max-width: 1301px) {
+  .haqimizda__big-boss {
+    display: flex;
+    flex-direction: column;
+  }
+  .haiqmizda__img-box {
+    display: flex;
+    justify-content: center;
+  }
+  .haqimizda__malakali {
+    position: static;
+    width: 200px;
+    height: 200px;
+  }
+  .haqimizda__bizesman {
+    position: static;
+    width: 200px;
+    height: 200px;
+  }
+  .haqimizda__loyiha {
+    position: static;
+    width: 200px;
+    height: 200px;
+  }
+  .haqimizda__mini-text-box {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+  .haqimizda__big-text {
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 44px;
+    line-height: 128.52%;
+  }
+  .haqimizda__mini-tekst {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 724px) {
+  .haiqmizda__img-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 446px) {
+  .haqimizda__malakali {
+    width: 150px;
+    height: 150px;
+  }
+  .haqimizda__bizesman {
+    width: 150px;
+    height: 150px;
+  }
+  .haqimizda__loyiha {
+    width: 150px;
+    height: 150px;
+  }
+}

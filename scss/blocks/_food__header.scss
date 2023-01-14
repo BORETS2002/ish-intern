@@ -14,5 +14,10 @@
   margin-right: 32px;
 }
 .food__header-img {
-  width: 191px;
+  max-width: 191px;
+}
+@media only screen and (max-width: 1324px) {
+  .food__header {
+    display: none;
+  }
 }

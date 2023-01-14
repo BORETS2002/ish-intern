@@ -77,7 +77,7 @@
   color: #f2f2f2;
 }
 .footr__list {
-  text-decoration: none;
+  list-style: none;
   margin: 0;
   margin-top: 40px;
   padding: 0;
@@ -93,8 +93,6 @@
   color: #a6a6a6;
 }
 
-.footer__qushimcha {
-}
 .footer__qushimcha-text {
   font-style: normal;
   font-weight: 700;
@@ -132,4 +130,124 @@
   font-size: 11px;
   line-height: 148.52%;
   color: #a6a6a6;
+}
+.footer__mini-box {
+  display: flex;
+}
+
+@media only screen and (max-width: 1264px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: #000000;
+  }
+  .footer__big-Bos {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .footer__logo-box {
+    max-width: 200px;
+    margin-right: 75px;
+  }
+  .footer__logo {
+    max-width: 145px;
+    margin-bottom: 26px;
+  }
+
+  .footer__email {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 148.52%;
+    color: #a6a6a6;
+    text-decoration: none;
+  }
+  .footer__adres {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 148.52%;
+    color: #a6a6a6;
+    text-decoration: none;
+  }
+
+  .footer__icon-items {
+    margin-right: 16px;
+  }
+
+  .footer__kompaniya-text {
+    margin-bottom: 30px;
+  }
+
+  .footer__xizmatlar {
+    margin-right: 118px;
+  }
+
+  .footr__list {
+    margin-top: 30px;
+  }
+  .footer__items {
+    margin-bottom: 10px;
+  }
+
+  .footer__after {
+    text-align: center;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 148.52%;
+    color: #a6a6a6;
+  }
+}
+.footer__big-wrapper {
+  display: flex;
+}
+@media only screen and (max-width: 1110px) {
+  .footer__big-Bos {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__kompaniya {
+    margin-right: 0;
+  }
+  .footer__icon-list {
+    display: none;
+  }
+  .footer__logo-box {
+    margin-right: 0;
+  }
+  .footer__big-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer__logo-box {
+    margin-right: 118px;
+  }
+  .footer__mini-box {
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 544px) {
+  .footer__items-href {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .footer__xizmatlar-text {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .footer__logo-box {
+    margin-right: 30px;
+  }
+  .footer__xizmatlar {
+    margin-right: 28px;
+  }
+
+  .footer__buton {
+    margin-bottom: 30px;
+  }
 }

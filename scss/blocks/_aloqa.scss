@@ -28,7 +28,7 @@
   display: flex;
 }
 .aloqa__mini-box-one {
-  width: 617px;
+  max-width: 617px;
   margin-top: 47px;
   margin-right: 53px;
 }
@@ -134,7 +134,7 @@
   flex-direction: column;
 }
 .aloqa__form-input {
-  width: 447px;
+  max-width: 447px;
   margin-bottom: 10px;
   padding: 18px 11px;
   border: 1px solid #6b6b6b;
@@ -153,4 +153,47 @@
   border: 1px solid #6b6b6b;
   border-radius: 12px;
   resize: none;
+}
+
+@media only screen and (max-width: 1324px) {
+  .aloqa__mini-box-one {
+    display: none;
+  }
+  .aloqa__big-wrapper {
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+  }
+  .aloqa__form-box {
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .aloqa__big-text {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 128.52%;
+  }
+}
+@media only screen and (max-width: 724px) {
+  .aloqa__form-box {
+    max-width: 350px;
+    padding: 36px 47px;
+  }
+  .aloqa__big-text {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 128.52%;
+  }
+  .aloqa__textarea {
+    width: 260px;
+    height: 187px;
+  }
+  .aloqa__big-text {
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 20px;
+  }
 }

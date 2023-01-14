@@ -1,7 +1,7 @@
 .hero {
   padding-top: 140px;
   padding-bottom: 800px;
-  // aslida padding bilan ochiladi lekin rasmlar tufayli margin bilan ochildi
+
   position: relative;
 }
 .hero__mini-animatiya-box {
@@ -67,19 +67,9 @@
     background-position: 100% 100%;
   }
 }
-// #animate-area {
-//   width: 200px;
-//   height: 200px;
-//   background-image: url("/images/katta_nuqtalar.svg");
-//   background-position: 120px 20px;
-//   background-repeat: repeat-x;
-//   animation: animatedBackground 10s linear infinite alternate;
-// }
 
 .hero__box {
-  position: relative;
-  z-index: 10;
-  width: 547px;
+  max-width: 547px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -136,8 +126,8 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px; /* ширина для вертикального скролла */
-  height: 8px; /* высота для горизонтального скролла */
+  width: 10px;
+  height: 8px;
   border-radius: 20px;
   background: linear-gradient(
     90deg,
@@ -146,7 +136,6 @@
   );
 }
 
-/* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
   background-color: #ff552d;
   border-radius: 9em;
@@ -155,4 +144,73 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #1f1d2b;
+}
+@media only screen and (max-width: 1124px) {
+  .hero {
+    padding-bottom: 1087px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .hero__onvite-text {
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 111.5%;
+  }
+
+  .hero__onvite {
+    font-weight: 700;
+    font-size: 60px;
+    color: #ff552d;
+  }
+  .hero__digital {
+    font-size: 80px;
+  }
+
+  .hero__solution {
+    font-size: 50px;
+  }
+  .hero__mini-text {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 111.5%;
+  }
+  .hero {
+    padding-top: 110px;
+    padding-bottom: 1275px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .hero__onvite-text {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 60px;
+  }
+
+  .hero__onvite {
+    font-weight: 400;
+    font-size: 40px;
+    color: #ff552d;
+  }
+  .hero__digital {
+    font-size: 70px;
+  }
+
+  .hero__solution {
+    font-size: 40px;
+  }
+  .hero__mini-text {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 111.5%;
+  }
+  .hero {
+    padding-top: 110px;
+    padding-bottom: 1386px;
+    position: relative;
+  }
 }
