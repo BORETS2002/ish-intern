@@ -1,5 +1,5 @@
 .aloqa {
-  padding-bottom: 30px;
+  padding-bottom: 1px;
   background-image: url("/images/bg-from.svg");
   background-repeat: no-repeat;
   // background-size: aucto;
@@ -17,9 +17,9 @@
 }
 .aloqa__big-text {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 44px;
   line-height: 148.52%;
   color: #ff552d;
   text-align: center;
@@ -148,7 +148,7 @@
 }
 .aloqa__textarea {
   width: 447px;
-  height: 217px;
+  height: 137px;
   padding: 12px;
   border: 1px solid #6b6b6b;
   border-radius: 12px;
@@ -196,4 +196,19 @@
     font-size: 32px;
     margin-top: 20px;
   }
+}
+.form__button {
+  display: block;
+  max-width: 237px;
+  margin-left: auto;
+  margin-top: 40px;
+  padding: 13px 35px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 148.52%;
+  color: #2d2d2d;
+
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 11px 1px #ff552d;
+  border-radius: 10px;
 }

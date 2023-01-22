@@ -1,549 +1,769 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-
-    <title>onveta</title>
-
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <header class="site-header" id="header">
-      <div class="container">
-          <nav class="navbar navbar-expand-lg">
-            <!-- <div class="container-fluid"> -->
-            <a class="header__logo-href navbar-brand" href="/index.html">
-              <img
-                class="header__logo-img"
-                src="/images/footerLOgo.svg"
-                alt="site logo Onveti"
-              />
-            </a>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarText"
-              aria-controls="navbarText"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="header__list navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="header__item  " href="#hero">Bosh Sahifa</a>
-                </li>
-                <li class="nav-item">
-                  <a class="header__item  " href="#xizmatlar"
-                    >Xizmatlar</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="header__item  " href="#Portfolio"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="header__item  " href="#bizHaqimizda"
-                    >Biz haqimizda</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="header__item  " href="#aloqa">Aloqa </a>
-                </li>
-              </ul>
-              
-
-              <span class="navbar-text header__box ">
-                <button class="header__language-button">Uzbek tili</button>
-                <div class="header__box-before">
-                  <span class="header__box-tel"
-                    ><span class="header__murojat">Murojaat uchun </span>
-                    <a class="header__tel" href="tel:+998995521407"
-                      >+998(99)552-14-07</a
-                    >
-                    <a class="header__tel" href="tel:+998906084260"
-                      >+998(90)608-42-60</a
-                    >
-                  </span>
-                </div>
-              </span>
-            </div>
-            <!-- </div> -->
-          </nav>
-        </div>
-      </div>
-    </header>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-
-    <main>
-      <section class="hero" id="hero">
-        <div class=" hero__mini-animatiya-big-box"></div>
-        <div class=" hero__mini-animatiya-box"></div>
-
-        <div class="container">
-          <div class="hero__box">
-            <h1 class="hero__onvite-text">
-              <span class="hero__onvite">ONVETI</span>
-              <span class="hero__digital">DIGITAL</span>
-              <span class="hero__solution">SOLUTION</span>
-            </h1>
-            <span class="hero__mini-text">Biz nima qilamiz?</span>
-          </div>
-        </div>
-      </section>
-     
-        <section  class="qisqacha">
-        <div class="container">
-          <div class="qisqacha__box">
-            <h2 class="qisqacha__big-text">Qisqacha Malumot</h2>
-            <div class="qisqacha__mini-box">
-              <p class="qisqacha__mini-text">
-                2+ yildan beri yordam berib kelayotgan raqamli agentlik.
-                Internetda brendlar va kompaniyalarni rivojlantirish.
-              </p>
-            </div>
-            <ul class="qisqacha__list">
-              <li class="qisqacha__items">
-                Yil <br />
-                biznesda
-              </li>
-              <li class="qisqacha__items">Mutahasislar <span class="qisqacha__spancha">ko’proq</span> </li>
-              <li class="qisqacha__items">
-                Xizmarlar <br />
-                uchun kafolat
-              </li>
-              <li class="qisqacha__items">
-                Muvaffaqiyatli <br />
-                loyihalar
-                <span class="qisqacha__spancha">ko’proq</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    <section class="xizmatlar" id="xizmatlar">
-        <div class="xizmatlar__box">
-          <h3 class="hizmatlar__big-text">Bizning Xizmatlarimiz</h3>
-
-          <ul class="xizmatlar__list">
-            <li class="xizmatlar__itms aktiv-class" value=1>
-              Mobile <br />
-              Ilovalar
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+  crossorigin="anonymous"
+  />
+  
+  <title>onveta</title>
+  
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <!-- <div class="container-fluid"> -->
+          <a class="header__logo-href navbar-brand" href="/index.html">
+            <img
+            class="header__logo-img"
+            src="/images/footerLOgo.svg"
+            alt="site logo Onveti"
+            />
+          </a>
+          
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="header__list navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="header__item  " href="#hero">Bosh Sahifa</a>
             </li>
-            <li class="xizmatlar__itms" value=2 >
-              Mobile <br />
-              Dizayn
+            <li class="nav-item">
+              <a class="header__item  " href="#xizmatlar"
+              >Xizmatlar</a
+              >
             </li>
-            <li class="xizmatlar__itms" value=3>
-              Web <br />
-              Saytlar
+            <li class="nav-item">
+              <a class="header__item  " href="#Portfolio"
+              >Portfolio</a
+              >
             </li>
-            <li class="xizmatlar__itms" value=4>
-              Web <br />
-              Dizayn
+            <li class="nav-item">
+              <a class="header__item  " href="#bizHaqimizda"
+              >Biz haqimizda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="header__item  " href="#aloqa">Aloqa </a>
             </li>
           </ul>
-
-          <div class="xizmatlar__box-text">
-            <strong class="xizmatlar__mobil-ilova">Mobile ilova</strong>
-            <p class="xizmatlar__mini-texr">
-              Mobile Dizayn lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.
-            </p>
-            <button class="xizmatlar__button">Buyurtma berish</button>
-          </div>
+          
+          
+          <span class="navbar-text header__box ">
+            <button class="header__language-button">Uzbek tili</button>
+            <div class="header__box-before">
+              <span class="header__box-tel"
+              ><span class="header__murojat">Murojaat uchun </span>
+              <!-- <a class="header__tel" href="tel:+998995521407"
+                >+998(99)552-14-07</a
+                > -->
+                <a class="header__tel" href="tel:+998906084260"
+                >+998(90)608-42-60</a
+                >
+              </span>
+            </div>
+          </span>
         </div>
+        <!-- </div> -->
+      </nav>
+    </div>
+  </div>
+</header>
 
-         <div class="portfolio" id="Portfolio">
-          <div class="prtfolio__box">
-            <h3 class="portfolio__big-text">Bizning portfolio</h3>
-            <ul class="portfolio__list">
-              <li class="portfolio__items">
-                <img
-                  class="portfolio__img"
-                  src="./images/mantiqiy-savolar.png"
-                  alt="mantiqiy savollar img"
-                />
-                <div class="portfolio__box-text">
-                  <strong class="portfolio__big-texts"
-                    >Mantiqiy Savollar</strong
-                  >
-                  <p class="portfolio__smaill-texts">
-                    Mantiqiy Savollar lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation
-                  </p>
-                </div>
-              </li>
 
-              <li class="portfolio__items">
-                <img
-                  class="portfolio__img"
-                  src="./images/kirilLotin.png"
-                  alt="lotin yozuvlari img"
-                />
-                <div class="portfolio__box-text">
-                  <strong class="portfolio__big-texts">Kirill-Lotin</strong>
-                  <p class="portfolio__smaill-texts">
-                    Kirill-Lotin lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation
-                  </p>
-                </div>
-              </li>
 
-              <li class="portfolio__items">
-                <img
-                  class="portfolio__img"
-                  src="./images/mantiqiy-savolar.png"
-                  alt="mantiqiy savollar img"
-                />
-                <div class="portfolio__box-text">
-                  <strong class="portfolio__big-texts"
-                    >Mantiqiy Savollar</strong
-                  >
-                  <p class="portfolio__smaill-texts">
-                    Mantiqiy Savollar lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation
-                  </p>
-                </div>
-              </li>
+<main>
+  <section class="hero" id="hero">
+    <div class=" hero__mini-animatiya-big-box"></div>
+    <div class=" hero__mini-animatiya-box">  
+      
+    </div>  
+    
+    
+    
+    <div class="container">
+      <div class="hero__box">
+        <h1 class="hero__onvite-text">
+          <span class="hero__onvite">ONVETI</span>
+          <span class="hero__digital">DIGITAL</span>
+          <span class="hero__solution">SOLUTION</span>
+        </h1>
+        <span class="hero__mini-text">Biz nima qilamiz?</span>
+      </div>
+    </div>
+  </section>
+  
+  <section  class="qisqacha">
+    <div class="container">
+      <div class="qisqacha__box">
+        <h2 class="qisqacha__big-text">Qisqacha Malumot</h2>
+        <div class="qisqacha__mini-box">
+          <p class="qisqacha__mini-text">
+            2+ yildan beri yordam berib kelayotgan raqamli agentlik.
+            Internetda brendlar va kompaniyalarni rivojlantirish.
+          </p>
+        </div>
+        <ul class="qisqacha__list">
+          <li class="qisqacha__items">
+            Yil <br />
+            biznesda
+          </li>
+          <li class="qisqacha__items">Mutahasislar <span class="qisqacha__spancha">ko’proq</span> </li>
+          <li class="qisqacha__items">
+            Xizmarlar <br />
+            uchun kafolat
+          </li>
+          <li class="qisqacha__items">
+            Muvaffaqiyatli <br />
+            loyihalar
+            <span class="qisqacha__spancha">ko’proq</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="xizmatlar" id="xizmatlar">
+    <div class="xizmatlar__box">
+      <h3 class="hizmatlar__big-text mb-3">Bizning Xizmatlarimiz</h3>
+      
+      <div class="option__box ">
+        
+        
+        <ul class="xizmatlar__list">
+          <li class="xizmatlar__itms aktiv-class" value=1>
+            Mobile ilovalar tuzish
+          </li>
+          <!-- <li class="xizmatlar__itms" value=2 >
+            Mobile <br />
+            Dizayn
+          </li> -->
+          <li class="xizmatlar__itms" value=3>
+            Web sayt tuzish
+          </li>
+          <li class="xizmatlar__itms" value=4>
+            Dizaynerlik xizmatlari
+          </li>
+        </ul>
+        
+        <div class="xizmatlar__box-text">
+          <!-- <strong class="xizmatlar__mobil-ilova">Mobile ilova</strong> -->
+          <p class="xizmatlar__mini-texr">
+            Bu olamda mavjudligingizni isbotlang! Veb-sayt — kompaniyangiz imidji. Oʻz biznesingizni internet tarmoqlarida sifatli targʻib qiling. Bu orqali mijozlaringiz soni oshadi. Axborot almashinuvi yuzaga keladi. Xizmat koʻrsatish sifati oshadi.
+
+          </p>
+          <ul class="xizmatlar-text__list one-list d-block">
+            <li class="xizmalar-text-items">Landing page
+            </li> <li class="xizmalar-text-items">    
+              Vizitka sayt
+            </li> <li class="xizmalar-text-items">   
+              Korporativ sayt
+            </li> <li class="xizmalar-text-items"> 
+              Internet do’kon
+            </li> <li class="xizmalar-text-items"> 
+              Katalog sayt
+            </li> <li class="xizmalar-text-items"> 
+              Web portal
+            </li>
+            <li class="xizmalar-text-items"> 
+              Turistik korxona uchun sayt
+            </li>
+            <li class="xizmalar-text-items">                          
+              SEO xizmati
+            </li>
+            <li class="xizmalar-text-items"> 
+              Qurilish korxonasi uchun sayt
+            </li>
             </ul>
 
-            <!-- <span class="pachination">
-              <span class="pachination__span"></span>
-              <span class="pachination__span color-span"></span>
-              <span class="pachination__span"></span>
-              <span class="pachination__span"></span>
-              <span class="pachination__span"></span>
-            </span> -->
-          </div>
-        </div> 
-      </section> 
 
-       <section class="haqimizda" id="bizHaqimizda">
-        <div class="container">
-          <h2 class="haqimizda__big-text">Biz haqimizda</h2>
-          <div class="haqimizda__big-boss">
-            <div class="haiqmizda__img-box">
-              <img
-                class="haqimizda__bizesman"
-                src="/images/biznesingiz.svg"
-                alt="biznesmenlar haqida img"
-              />
-              <img
-                class="haqimizda__malakali"
-                src="/images/malakali.svg"
-                alt="hodimlar haqida img"
-              />
+            <ul class="xizmatlar-text__list twoo-list d-none">
+              <li class="xizmalar-text-items">Internet magazin
+              </li> <li class="xizmalar-text-items">    
+                Taksi ilovasi
+              </li> <li class="xizmalar-text-items">   
+                Restoranlar uchun ilova
+              </li> <li class="xizmalar-text-items"> 
+                Video streaming uchun ilova
+              </li> <li class="xizmalar-text-items"> 
+                Avtosalon lar uchun ilova
+              </li> <li class="xizmalar-text-items"> 
+                Elektron savdo ilovasi
+              </li>
+              <li class="xizmalar-text-items"> 
+                Onlayn kinoteatr
+              </li>
+              <li class="xizmalar-text-items">                          
+                SEO xizmati
+              </li>
+              <li class="xizmalar-text-items"> 
+                Mehmonxonalar uchun ilova
+              </li>
+              </ul>
 
-              <img
-                class="haqimizda__loyiha"
-                src="/images/har-bir-loiha.svg"
-                alt="hodimlar haqida img"
-              />
-            </div>
-            <div class="haqimizda__mini-text-box">
-              <p class="haqimizda__mini-tekst">
-                ONVETI – Toshkentda joylashgan IT kompaniya bo‘lib, biz nafaqat
-                O’zbekiston, balki boshqa davlatlardagi mijozlar bilan ham
-                ishlaymiz. Asosiy faoliyatimiz har xil turdagi Mobil ilovalar,
-                dizayn yechimlari, Internet-loyihalarni ishlab chiqish va ularga
-                xizmat ko‘rsatish, Internet-marketing, veb-saytlarni loyihalash
-                va ishlab chiqish, shuningdek, ularni qo‘llab-quvvatlash va
-                rivojlantirish bilan ham shug’ullanamiz.
-              </p>
-            </div>
+ 
+
+
+              <ul class="xizmatlar-text__list three-list d-none">
+                <li class="xizmalar-text-items">Ilova uchun dizayn
+                </li> <li class="xizmalar-text-items">    
+                  Web sayt uchun dizayn
+                </li> <li class="xizmalar-text-items">   
+                  Dizayn
+                </li> <li class="xizmalar-text-items"> 
+                  Logotip
+                </li> <li class="xizmalar-text-items"> 
+                  Brending
+                </li> <li class="xizmalar-text-items"> 
+                  Upakovka
+                </li>
+                <li class="xizmalar-text-items"> 
+                  Ijtimoiy tarmoqlar va reklama uchun poster
+                </li>
+                 
+                </ul>
+  
+                
+               
+                
+                
+                
+                
+               
+
+            <a class="xizmatlar__button" href="#aloqa" >Buyurtma berish</a>
           </div>
         </div>
-      </section>  
+        
+      </div>
+      
+      <div class="portfolio" id="Portfolio">
+        <div class="prtfolio__box">
+          <h3 class="portfolio__big-text">Bizning portfolio</h3>
+          <ul class="portfolio__list">
 
-       <section class="aloqa" id="aloqa">
-        <div class="aloqa__big-wrapper">
-          <h2 class="aloqa__big-text">Biz bilan bog’laning</h2>
-          <div class="aloqa__big-box">
-            <div class="aloqa__mini-box-one">
-              <p class="aloqa__mini-tex">
-                ONVETI – Biz o’z ishimizni sevamiz va sizning o’z biznesingizni
-                rivojlantirishga bo’lgan xohishingizni qadrlaymiz. Sizga qanday
-                yordam bera olishimizni bilish uchun biz bilan bog’laning.
-              </p>
-              <div class="aloqa__tel-email-box">
-                <div class="aloqa__img-tel">
-                  <span class="aloqa__tel-box">
-                    <strong class="aloqa__tel-text">Telefon</strong>
-                    <a class="aloqa__tel" href="tel:+998995521407"
-                      >+998(99)552-14-07
-                    </a>
-                    <a class="aloqa__tel" href="tel:+998906084260"
-                      >+998(90)608-42-60</a
-                    >
-                  </span>
-                </div>
+            <li class="portfolio__items">
+              <a class="href-box" href="https://play.google.com/store/apps/details?id=uz.onveti.mantiqiysavollar" target="blank">
+                <img
+                class="portfolio__img img-invalid"
+                src="./images/raqamliavlod.jpg "
+                alt="mantiqiy savollar img"
+                />
+              </a>
+              <div class="portfolio__box-text">
+                <strong class="portfolio__big-texts"
+                >Raqamli  Avlod</strong
+                >
+                <p class="portfolio__smaill-texts">
+                  Ushbu sayt dasturlashga qiziquvchi yosh dasturchilar uchun
+                  ishlab chiqilgan bo'lib, siz ushbu sayt yordamida dasturlashni
+                  online, uyingizdan chiqmagan holda o'rganib olishingiz mumkin, xususan:
+                  Web dasturlash, Mobile Dasturlash, Malumotlar bazasi, .NET dasturlash
+                  UI/UX Dizayn
+                  
+                  
+                </p>
+              </div>
+            </li>
 
-                <div class="aloqa__email-img">
-                  <span class="aloqa__email-box">
-                    <strong class="aloqa__email-text">Email</strong>
-                    <a class="aloqa__email" href="mailto:onvetiuz@gmail.com"
-                      >onvetiuz@gmail.com</a
-                    >
-                  </span>
-                </div>
+ 
+            <li class="portfolio__items">
+              <a href="https://play.google.com/store/apps/details?id=uz.onveti.mantiqiysavollar" target="blank">
+                <img
+                class="portfolio__img"
+                src="./images/mantiqiy-savolar.png"
+                alt="mantiqiy savollar img"
+                />
+              </a>
+              <div class="portfolio__box-text">
+                <strong class="portfolio__big-texts"
+                >Mantiqiy Savollar</strong
+                >
+                <p class="portfolio__smaill-texts">
+                  Mantiqiy Savollar ilovasi Mantiqan o'ylashga majbur qiladigan
+                  va har xil viktorinalar yechishga qiziqadigan ham-yurtdoshlarimiz 
+                  uchun ishlab chiqilgan ilova bo'lib, hozirda ilova bazasi ichida 
+                  400 ga yaqin bir biridan ajoyib har xil savollar bo'lib sizni 
+                  Mantiqiy fikrlashingiz o'stiribgina qolmay, do'stlaringiz bilan 
+                  yoki Maktabda sinfdoshlaringiz bilan birga har xil Mantiqiy va Test 
+                  savollarga javob berishingiz mumkin.
+                  
+                </p>
+              </div>
+            </li>
+            
+            <li class="portfolio__items">
+              <a href="https://play.google.com/store/apps/details?id=uz.onveti.krilllotin" target="blank">
+
+              <img
+              class="portfolio__img"
+              src="./images/kirilLotin.png"
+              alt="lotin yozuvlari img"
+              />
+             </a>
+
+              <div class="portfolio__box-text">
+                <strong class="portfolio__big-texts">Kirill-Lotin</strong>
+                <p class="portfolio__smaill-texts">
+                  Yaqin o'tmishdan bizga malumki yozuvchilar, shoirlar, adabiyot 
+yoki ona-tili fani qiziquvchilari yoki bo'lmasa oddiy insonlar ham 
+Kiril yozuvidagi so'zlarni Lotin yozuviga yoki aksincha Lotin yozuvidagi 
+so'zlarni Kiril yozuviga qo'l bilan yozib o'tkashizgan va hozirda bu narsaga
+hojat qolmagan, chunki 21-asr texnologiyalar asrida yashamoqdamiz va biz sizlar
+uchun bu muammo yechimi deb qarashingiz mumkin bo'lgan Mobil ilovani ishlab chiqdik.
+
+                </p>
+              </div>
+            </li>
+            
+            <li class="portfolio__items">
+              <a class="href-box" href="https://play.google.com/store/apps/details?id=uz.onveti.halolpay.new" target="blank">
+                <img
+                class="portfolio__img img-invalid"
+                src="./images/somsa.jpg"
+                alt="   halolpay img"
+                />
+              </a>
+              <div class="portfolio__box-text">
+                <strong class="portfolio__big-texts"
+                >Halolpay</strong
+                >
+                <p class="portfolio__smaill-texts">
+                  Uzbekistonga qulay pul o'tkazish
+                  Rossiya da ishlovchi hamyurtlarimiz
+                  yaqinlari uchun Uzbekistonga pul yuborishi uchun 
+                  Halolpay ilovasini ishlab chiqdik va bu ilova yordamida siz
+                  Rossiyadan turib Uzbekistonga pul yuboribgina qolmay 
+                  Mobil aloqa hisoblarini to'ldirish, Internet providerlar(wifi), kommunal xizmatlar,
+                  Internet to'plamlar, IPTV to'lovlarini qulay va tez amalga oshirishingiz mumkin.
+                </p>
+              </div>
+            </li>
+
+
+
+                  
+            <li class="portfolio__items">
+              <a class="href-box" href="https://play.google.com/store/apps/details?id=uz.asxab.salawat" target="blank">
+                <img
+                class="portfolio__img img-invalid"
+                src="./images/asxab.jpg"
+                alt="   asxab img"
+                />
+              </a>
+              <div class="portfolio__box-text">
+                <strong class="portfolio__big-texts"
+                >Asxab</strong
+                >
+                <p class="portfolio__smaill-texts">
+                  Savolat Asxab: Salovat ilovasi mo'min musulmonlarga salovat aytishni eslatadigan
+ilova bo'lib, bu ilova telefoningizni qulfdan chiqarganingizda Payg'ambarimiz
+Muhammad S.A.V ga savolat aytishni eslatib turadi. Ilovani imkoniyatlaridan 
+yana biri necha marta salovot aytayotganingizni, ya'ni ilova telefoningizni necha 
+marta qulfdan chiqarganingizni va necha marta salovot aytishingiz mumkinligini 
+hisoblab boradi.
+                </p>
+              </div>
+            </li>
+          </ul>
+          
+          <!-- <span class="pachination">
+            <span class="pachination__span"></span>
+            <span class="pachination__span color-span"></span>
+            <span class="pachination__span"></span>
+            <span class="pachination__span"></span>
+            <span class="pachination__span"></span>
+          </span> -->
+        </div>
+      </div> 
+    </section> 
+    
+    <section class="haqimizda" id="bizHaqimizda">
+      <div class="container">
+        <h2 class="haqimizda__big-text">Biz haqimizda</h2>
+        <div class="haqimizda__big-boss">
+          <div class="haiqmizda__img-box">
+            <img
+            class="haqimizda__bizesman"
+            src="/images/biznesingiz.svg"
+            alt="biznesmenlar haqida img"
+            />
+            <img
+            class="haqimizda__malakali"
+            src="/images/malakali.svg"
+            alt="hodimlar haqida img"
+            />
+            
+            <img
+            class="haqimizda__loyiha"
+            src="/images/har-bir-loiha.svg"
+            alt="hodimlar haqida img"
+            />
+          </div>
+          <div class="haqimizda__mini-text-box">
+            <p class="haqimizda__mini-tekst">
+              ONVETI – Toshkentda joylashgan IT kompaniya bo‘lib, biz nafaqat
+              O’zbekiston, balki boshqa davlatlardagi mijozlar bilan ham
+              ishlaymiz. Asosiy faoliyatimiz har xil turdagi Mobil ilovalar,
+              dizayn yechimlari, Internet-loyihalarni ishlab chiqish va ularga
+              xizmat ko‘rsatish, Internet-marketing, veb-saytlarni loyihalash
+              va ishlab chiqish, shuningdek, ularni qo‘llab-quvvatlash va
+              rivojlantirish bilan ham shug’ullanamiz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>  
+    
+    <section class="aloqa" id="aloqa">
+      <div class="aloqa__big-wrapper">
+        <h2 class="aloqa__big-text">Biz bilan bog’laning</h2>
+        <div class="aloqa__big-box">
+          <div class="aloqa__mini-box-one">
+            <p class="aloqa__mini-tex">
+              ONVETI – Biz o’z ishimizni sevamiz va sizning o’z biznesingizni
+              rivojlantirishga bo’lgan xohishingizni qadrlaymiz. Sizga qanday
+              yordam bera olishimizni bilish uchun biz bilan bog’laning.
+            </p>
+            <div class="aloqa__tel-email-box">
+              <div class="aloqa__img-tel">
+                <span class="aloqa__tel-box">
+                  <strong class="aloqa__tel-text">Telefon</strong>
+                  <!-- <a class="aloqa__tel" href="tel:+998995521407"
+                    >+998(99)552-14-07
+                  </a> -->
+                  <a class="aloqa__tel" href="tel:+998906084260"
+                  >+998(90)608-42-60</a
+                  >
+                </span>
+              </div>
+              
+              <div class="aloqa__email-img">
+                <span class="aloqa__email-box">
+                  <strong class="aloqa__email-text">Email</strong>
+                  <a class="aloqa__email" href="mailto:onvetiuz@gmail.com"
+                  >onvetiuz@gmail.com</a
+                  >
+                </span>
               </div>
             </div>
-            <div class="aloqa__form-box">
-              <h3 class="aloqa__form-text">Biz bilan bog’laning</h3>
-
-              <form
-                class="aloqa__form"
-                action="https://echo.htmlacademy.ru/"
-                method="POST"
-                autocomplete="off"
-              >
+          </div>
+          <div class="aloqa__form-box">
+            <h3 class="aloqa__form-text">Biz bilan bog’laning</h3>
+            
+            <!-- <form
+              
+              action="https://echo.htmlacademy.ru/"
+              method="POST"
+              autocomplete="off"
+              > -->
+              
+              <form class="aloqa__form"  
+                action="https://formsubmit.co/onvetiuz@gmail.com"   method="post" 
+                autocomplete="off">
+                
                 <input
-                  class="aloqa__form-input"
-                  type="text"
-                  aria-label="name"
-                  placeholder="Ismingiz*"
+                class="aloqa__form-input"
+                type="text"
+                aria-label="name"
+                placeholder="Ismingiz*"
+                name="name:"
+                required
                 />
                 <input
-                  class="aloqa__form-input"
-                  type="tel"
-                  aria-label="telefon"
-                  placeholder="+998"
+                class="aloqa__form-input"
+                type="tel"
+                aria-label="telefon"
+                required
+                name="tel:"
+                placeholder="+998"
                 />
                 <input
-                  class="aloqa__form-input"
-                  type="email"
-                  aria-label="name"
-                  placeholder=" Email"
+                class="aloqa__form-input"
+                type="email"
+                aria-label="name"
+                name="email:"
+                required
+                placeholder=" Email"
                 />
                 <textarea
-                  class="aloqa__textarea"
-                  name="messege"
-                  aria-label="message"
-                  placeholder="Bu yerda xabar qoldiring..."
+                class="aloqa__textarea"
+                name="messege:"
+                
+                aria-label="message"
+                placeholder="Bu yerda xabar qoldiring..."
                 ></textarea>
+                <button class="form__button" type="submit" >Xabar yuborish</button>
               </form>
             </div>
           </div>
+        </div> <section class="savollar">
+          <div class="container">
+            <div class="savollar__box">
+              <div class="savoollar-img-box">
+                <img class="savollar-img" src="/images/savollar.svg" alt="savollar img">
+                 </div>
+                 <div class="savollar-text-box">
+                   <h3 class="savollar-text-big">Tez-tez so‘raladigan savollar</h3>
+  <!--  -->
+  
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item  ">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Veb-saytga qanday qo'shimcha qo'shish mumkin?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Veb-saytga qo'shimchalar veb-sayt yaratilishidan oldin kelishib olinadi. Agar sayt foydalanuvchiga topshirilsa, faqat saytdagi xatolarni tuzatish mumkin! Saytga qo'shimcha qo'shimchalar yangi kelishuvga bog'liq bo'ladi.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Sizda Veb-sayt dizayni bormi?
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Bizda sayt dizaynlari mavjud. Agar sizda sayt dizayni bo'lmasa, biz sizga o'z takliflarimizni beramiz</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Toshkentda sayt yaratish qancha turadi?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Toshkent va mintaqalarda saytlarni ishlab chiqish qiymati ularning turiga va murakkablik darajasiga bog'liq. Har bir loyiha uchun umumiy miqdor sayt turini, texnik topshiriqning murakkabligini va funksionalligini hisobga olgan holda alohida hisoblanadi. Dora-dagi bitta sahifali veb-saytning narxi 110 dollardan boshlanadi.
         </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--  -->
+  </div>
+            </div>
+          </div>
+        </section>
       </section> 
-
-       <section class="food__header">
+     
+      <section class="food__header">
         <div class="container">
           <ul class="food__header-list">
             <li class="food__header__items">
               <img
-                class="food__header-img"
-                src="/images/olcha.svg"
-                alt="olcha uz logo"
+              class="food__header-img"
+              src="/images/olcha.svg"
+              alt="olcha uz logo"
               />
             </li>
-
+            
             <li class="food__header__items">
               <img
-                class="food__header-img"
-                src="/images/kapitalbank.svg"
-                alt="  kapital uz logo"
-              />
-            </li>
-            <li class="food__header__items">
-              <img
-                class="food__header-img"
-                src="/images/iman.svg"
-                alt=" iman logo"
+              class="food__header-img"
+              src="/images/kapitalbank.svg"
+              alt="  kapital uz logo"
               />
             </li>
             <li class="food__header__items">
               <img
-                class="food__header-img"
-                src="/images/davrBank.svg "
-                alt=" davrBank logo"
+              class="food__header-img"
+              src="/images/iman.svg"
+              alt=" iman logo"
               />
             </li>
             <li class="food__header__items">
               <img
-                class="food__header-img"
-                src="/images/rasulov.svg"
-                alt="  rasulov   logo"
+              class="food__header-img"
+              src="/images/davrBank.svg "
+              alt=" davrBank logo"
               />
             </li>
             <li class="food__header__items">
               <img
-                class="food__header-img"
-                src="/images/Itpark.svg"
-                alt="  Itpark   logo"
+              class="food__header-img"
+              src="/images/rasulov.svg"
+              alt="  rasulov   logo"
+              />
+            </li>
+            <li class="food__header__items">
+              <img
+              class="food__header-img"
+              src="/images/Itpark.svg"
+              alt="  Itpark   logo"
               />
             </li>
           </ul>
         </div>
       </section>  
     </main>
-      <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__big-Bos">
           <div class="footer__big-wrapper">
-
-          <div class="footer__logo-box">
-            <a href="index.html">
-              <img
+            
+            <div class="footer__logo-box">
+              <a href="index.html">
+                <img
                 class="footer__logo"
                 src="/images/footerLOgo.svg"
                 alt="site logo"
-              />
-            </a>
-            <a class="footer__email" href="mailto:onvetiuz@gmail.com"
+                />
+              </a>
+              <a class="footer__email" href="mailto:onvetiuz@gmail.com"
               >onvetiuz@gmail.com</a
-            >
-            <address>
-              <a
+              >
+              <address>
+                <a
                 class="footer__adres"
                 href="https://goo.gl/maps/5xFecvoPKRRi3h58A"
                 target="blank"
-              >
+                >
                 Tashkent, Uzbekistan, Chilonzor tumani, Cho’pon ota kuchasi </a
-              ><br />
-            </address>
-            <ul class="footer__icon-list">
-              <li class="footer__icon-items">
-                <img
-                  class="footer__icon-img"
-                  src="/images/linkidin.svg"
-                  alt="linkidin"
-                />
-              </li>
-              <li class="footer__icon-items">
-                <img
-                  class="footer__icon-img"
-                  src="/images/instagram.svg"
-                  alt="instagram"
-                />
-              </li>
-
-              <li class="footer__icon-items">
-                <img
-                  class="footer__icon-img"
-                  src="/images/telegram.svg"
-                  alt="telegram"
-                />
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__kompaniya">
-            <strong class="footer__kompaniya-text">Kompaniya</strong>
-            <a class="footer__kompaniya-href" href="#bizHaqimizda"
+                ><br />
+              </address>
+              <ul class="footer__icon-list">
+                <li class="footer__icon-items">
+                  <a href="https://www.linkedin.com/company/onveti/about/" target="blank" >
+                    
+                    <img
+                    class="footer__icon-img"
+                    src="/images/linkidin.svg"
+                    alt="linkidin"
+                    />
+                  </a>
+                </li>
+                <li class="footer__icon-items">
+                  <a href="https://instagram.com/onveti.uz" target="blank">
+                    <img
+                    class="footer__icon-img"
+                    src="/images/instagram.svg"
+                    alt="instagram"
+                    />
+                  </a>
+                </li>
+                
+                <li class="footer__icon-items">
+                  <a href="tg:@onvetiuz" target="blank">
+                    <img
+                    class="footer__icon-img"
+                    src="/images/telegram.svg"
+                    alt="telegram"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="footer__kompaniya">
+              <strong class="footer__kompaniya-text">Kompaniya</strong>
+              <a class="footer__kompaniya-href" href="#bizHaqimizda"
               >Biz haqimizda</a
-            >
-            <a class="footer__kompaniya-href" href="#Portfolio">Portfolio</a>
+              >
+              <a class="footer__kompaniya-href" href="#Portfolio">Portfolio</a>
+            </div>
+            
+            
           </div>
-
-
-        </div>
-
-
-
-<div class="footer__mini-box">
-
-          <div class="footer__xizmatlar">
-            <strong class="footer__xizmatlar-text">Xizmatlar</strong>
-            <ul class="footr__list">
-              <li class="footer__items">
-                <a class="footer__items-href" href="#xizmatlar"
+          
+          
+          
+          <div class="footer__mini-box">
+            
+            <div class="footer__xizmatlar">
+              <strong class="footer__xizmatlar-text">Xizmatlar</strong>
+              <ul class="footr__list">
+                <li class="footer__items">
+                  <a class="footer__items-href" href="#xizmatlar"
                   >Mobile Ilova ishlab chiqish</a
-                >
-              </li>
-
-              <li class="footer__items">
-                <a class="footer__items-href" href="#xizmatlar">
-                  Mobile Dizayn</a
-                >
-              </li>
-
-              <li class="footer__items">
-                <a class="footer__items-href" href="#xizmatlar"> Web saytlar</a>
-              </li>
-
-              <li class="footer__items">
-                <a class="footer__items-href" href="#xizmatlar"> Web Dizayn</a>
-              </li>
-              <li class="footer__items">
-                <a class="footer__items-href" href="#xizmatlar"> SMM</a>
-              </li>
-              <li class="footer__items">
-                <a class="footer__items-href" href="#xizmatlar">
-                  Sayt ilovasini yaratish</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__qushimcha">
-            <strong class="footer__qushimcha-text">Qo’shimcha</strong>
-            <ul class="footer__qushimcha-list">
-              <li class="footer__qushimcha-items">
-                <a class="footer__items-href" href="#aloqa">
-                  Foydalanish shartlari
-                </a>
-              </li>
-
-              <li class="footer__qushimcha-items">
-                <a class="footer__items-href" href="#aloqa">
-                  Maxfiylik siyosati
-                </a>
-              </li>
-
-              <li class="footer__qushimcha-items">
-                <a class="footer__items-href" href="#aloqa">
-                  Biz bilan aloqa
-                </a>
-              </li>
-            </ul>
-          </div>
+                  >
+                </li>
+                
+                <li class="footer__items">
+                  <a class="footer__items-href" href="#xizmatlar">
+                    Mobile Dizayn</a
+                    >
+                  </li>
+                  
+                  <li class="footer__items">
+                    <a class="footer__items-href" href="#xizmatlar"> Web saytlar</a>
+                  </li>
+                  
+                  <li class="footer__items">
+                    <a class="footer__items-href" href="#xizmatlar"> Web Dizayn</a>
+                  </li>
+                  <li class="footer__items">
+                    <a class="footer__items-href" href="#xizmatlar"> SMM</a>
+                  </li>
+                  <li class="footer__items">
+                    <a class="footer__items-href" href="#xizmatlar">
+                      Sayt ilovasini yaratish</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="footer__qushimcha">
+                  <strong class="footer__qushimcha-text">Qo’shimcha</strong>
+                  <ul class="footer__qushimcha-list">
+                    <li class="footer__qushimcha-items">
+                      <a class="footer__items-href" href="#aloqa">
+                        Foydalanish shartlari
+                      </a>
+                    </li>
+                    
+                    <li class="footer__qushimcha-items">
+                      <a class="footer__items-href" href="#aloqa">
+                        Maxfiylik siyosati
+                      </a>
+                    </li>
+                    
+                    <li class="footer__qushimcha-items">
+                      <a class="footer__items-href" href="#aloqa">
+                        Biz bilan aloqa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+            <a class="footer__buton" href="#header"></a>
+            
+            <p class="footer__after">
+              Copyright ONVETI 2020-2023. Barcha huquqlar himoyalangan
+            </p>
+          </p>
         </div>
-
-
-        </div>
-
-        <a class="footer__buton" href="#header"></a>
-        
-        <p class="footer__after">
-          Copyright ONVETI 2020-2023. Barcha huquqlar himoyalangan
-        </p>
-      </p>
-    </div>
-    </footer>  
-    <script src="/js/main.js"></script>
-    <script
+      </footer>  
+      
+      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
-    ></script>
+      >
+    </script>
+    <script src="/js/main.js"></script>
   </body>
-</html>
+  </html>
+  

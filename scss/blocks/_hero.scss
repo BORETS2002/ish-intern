@@ -1,6 +1,6 @@
 .hero {
-  padding-top: 140px;
-  padding-bottom: 800px;
+  padding-top: 80px;
+  padding-bottom: 915px;
 
   position: relative;
 }
@@ -15,7 +15,7 @@
     url("/images/nuqtalar_kup_chapTomon.svg");
   background-repeat: repeat-x;
   background-position: center, 10% 70%;
-  animation: yulduzli infinite 4s linear;
+  animation: yulduzli infinite 4s reverse;
 }
 
 .hero__mini-animatiya-big-box {
@@ -30,7 +30,7 @@
   background-repeat: no-repeat;
   background-position: 0 40px;
   background-size: 100%;
-  animation: bigNuqta infinite 5s linear;
+  animation: bigNuqta infinite 5s alternate-reverse;
 }
 
 @keyframes bigNuqta {
@@ -46,6 +46,18 @@
   100% {
     opacity: 0.4;
   }
+  from {
+    background-position: 0% 10%;
+  }
+  to {
+    background-position: 0% 100%;
+  }
+  // from {
+  //   background-position: 0% 70%;
+  // }
+  // to {
+  //   background-position: 0% 10%;
+  // }
 }
 @keyframes yulduzli {
   0% {
@@ -76,11 +88,11 @@
 }
 .hero__onvite-text {
   margin: 0;
-  margin-bottom: 86px;
+  margin-bottom: 40px;
   font-style: normal;
   font-weight: 900;
-  font-size: 100px;
-  line-height: 111.5%;
+  font-size: 95px;
+  line-height: 110.5%;
 }
 .hero__onvite {
   font-weight: 900;

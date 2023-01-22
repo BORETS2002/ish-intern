@@ -1,0 +1,92 @@
+.savollar {
+  padding: 35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.savollar__box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 21px;
+  padding-bottom: 31px;
+  padding-right: 12px;
+  padding-left: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    5px 4px 4px rgba(255, 85, 45, 0.5);
+  border-radius: 50px;
+}
+.savoollar-img-box {
+  width: 305px;
+  height: 305px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.savollar-img {
+  border-radius: 53%;
+}
+.savollar-text-box {
+  max-width: 527px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.savollar-text-big {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 148.52%;
+  color: #000000;
+}
+.accordion-item {
+  margin-bottom: 20px !important;
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    5px 4px 4px rgba(255, 85, 45, 0.5) !important;
+}
+.accordion-button {
+  border-radius: 20px !important;
+}
+.accordion-button:focus {
+  z-index: 3;
+  /* border-color: var(--bs-accordion-btn-focus-border-color); */
+  /* outline: 0; */
+  box-shadow: none !important ;
+}
+.accordion-button:not(.collapsed) {
+  color: darkorange !important ;
+  background-color: transparent !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/images/strelka.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1100px) {
+  .savoollar-img-box {
+    display: none;
+  }
+}
+@media screen and (max-width: 721px) {
+  .savollar-text-big {
+    font-weight: 500;
+    font-size: 21px !important;
+    text-align: center;
+  }
+  .savollar-text-big {
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+  }
+  .savollar-text-box {
+    max-width: 297px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .accordion-button {
+    font-size: 12px !important;
+  }
+}

@@ -3,6 +3,11 @@ const elItems = document.querySelectorAll(".xizmatlar__itms");
 const elMiniText = document.querySelector(".xizmatlar__mini-texr");
 const elBigText = document.querySelector(".xizmatlar__mobil-ilova");
 
+const elXizmatItms = document.querySelectorAll(".xizmalar-text-items");
+const oneList = document.querySelector(".one-list");
+const twooList = document.querySelector(".twoo-list");
+const threeList = document.querySelector(".three-list");
+
 elList.addEventListener("click", (evt) => {
   elItems.forEach((item) => {
     if (item.classList[1]) {
@@ -14,33 +19,43 @@ elList.addEventListener("click", (evt) => {
   }
 
   if (evt.target.value == 1) {
-    elBigText.textContent = "Mobile ilova";
+    // elBigText.textContent = "ilova";
     elMiniText.textContent =
-      "Mobile Ilova lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
-  }
-  if (evt.target.value == 2) {
-    elBigText.textContent = "Mobile Dizayn";
+      "Hozirgi kunda O’zbekistondagi 70% internet foydalanuvchilari internetga Androidli mobil qurilmalar yordamida chiqishmoqda. Agar siz doimo mijozlaringiz “kaftida” bo’lishni hohlasangiz, u holda biznes uchun mobil ilova – aynan sizga uchun kerak. Android uchun mobil ilovaga buyurtma berib, mobile-texnologiyaning biznesingiz uchun beradigan imkoniyatlaridan foydalaning.";
 
-    elMiniText.textContent =
-      "Mobile Dizayn lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  onsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
+    oneList.classList.add("d-block");
+    oneList.classList.remove("d-none");
+    twooList.classList.add("d-none");
+    threeList.classList.add("d-none");
   }
+
   if (evt.target.value == 3) {
-    elBigText.textContent = "Web Saytlar";
+    // elBigText.textContent = "Web Saytlar";
     elMiniText.textContent =
-      "Web site lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  onsequat.   esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
+      "Bu olamda mavjudligingizni isbotlang! Veb-sayt — kompaniyangiz imidji. Oʻz biznesingizni internet tarmoqlarida sifatli targʻib qiling. Bu orqali mijozlaringiz soni oshadi. Axborot almashinuvi yuzaga keladi. Xizmat koʻrsatish sifati oshadi.";
+
+    oneList.classList.add("d-none");
+    twooList.classList.remove("d-none");
+    twooList.classList.add("d-block");
+
+    threeList.classList.add("d-none");
   }
   if (evt.target.value == 4) {
-    elBigText.textContent = "Web Dizayn";
+    // elBigText.textContent = "Web Dizayn";
     elMiniText.textContent =
-      "Web Dizayn lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  onsequat.   esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt  do eiusmod tempor incididunt ut  onsequat.   esse cillum dolore eu fugiat nulla pari in culpa qui officia deserunt mollit anim id est laborum";
+      "UX/UI dizaynerining maqsadi foydalanuvchi interfeysini ba'zi mantiqiy nuqtaga olib kelishdir. Shunday qilish kerakki, foydalanuvchi o’z maqsadiga erishsin.UX/UI dizayn - bu har qanday foydalanuvchi interfeyslarini foydalanishga qulay qilish va tashqi ko’rinishini hisobga olib loyihalashtirish hisoblanadi.";
+
+    threeList.classList.add("d-none");
+    threeList.classList.remove("d-none");
+
+    twooList.classList.add("d-none");
+    oneList.classList.add("d-none");
   }
-  // console.log(evt.target.value);
 });
 
 const elSiteheaderToggleBtn = document.querySelector(".btn-open");
 const elHeader = document.querySelector(".site-header");
 const elsiteNav = document.querySelector(".sitenav");
-console.log(elSiteheaderToggleBtn);
 
 elSiteheaderToggleBtn.addEventListener("click", function () {
   elHeader.classList.toggle("site-header__open");

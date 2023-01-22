@@ -1,6 +1,6 @@
 .site-header {
-  padding-top: 17px;
-  padding-bottom: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
@@ -107,6 +107,7 @@
     line-height: 20px;
   }
   .header__language-button {
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
