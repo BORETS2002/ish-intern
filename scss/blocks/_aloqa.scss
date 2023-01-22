@@ -46,6 +46,8 @@
 }
 .aloqa__img-tel {
   display: flex;
+  justify-content: center;
+  align-items: center;
   &::before {
     content: "";
     display: block;
@@ -53,6 +55,21 @@
     height: 66px;
     margin-right: 12px;
     background-image: url("/images/oq-tel.svg");
+    border-radius: 20px;
+    box-shadow: 5px 4px 4px rgba(255, 85, 45, 0.25);
+  }
+}
+.aloqa__img-telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 66px;
+    margin-right: 12px;
+    background-image: url("/images/telegramOqFon.svg");
     border-radius: 20px;
     box-shadow: 5px 4px 4px rgba(255, 85, 45, 0.25);
   }
@@ -104,7 +121,24 @@
     border-radius: 18px;
   }
 }
+.aloqa__instagram-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 59px;
 
+  &::before {
+    content: "";
+    width: 66px;
+    height: 66px;
+    display: block;
+    margin-right: 12px;
+    background-image: url("/images/instagramOqFon.svg");
+    background-repeat: no-repeat;
+    box-shadow: 5px 4px 4px rgba(255, 85, 45, 0.25);
+    border-radius: 18px;
+  }
+}
 .aloqa__email {
   font-style: normal;
   font-weight: 400;
@@ -207,7 +241,7 @@
   font-size: 20px;
   line-height: 148.52%;
   color: #2d2d2d;
-
+  border: none;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 2px 2px 11px 1px #ff552d;
   border-radius: 10px;

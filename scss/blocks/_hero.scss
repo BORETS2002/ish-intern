@@ -37,55 +37,55 @@
   background-repeat: no-repeat;
   background-position: 0 40px;
   background-size: 100%;
-  animation: bigNuqta infinite 5s alternate-reverse;
+  // animation: bigNuqta infinite 5s alternate-reverse;
 }
 
-@keyframes bigNuqta {
-  0% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.4;
-  }
-  from {
-    background-position: 0% 10%;
-  }
-  to {
-    background-position: 0% 100%;
-  }
-  // from {
-  //   background-position: 0% 70%;
-  // }
-  // to {
-  //   background-position: 0% 10%;
-  // }
-}
-@keyframes yulduzli {
-  0% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.2;
-  }
-  from {
-    background-position: 65% 50%;
-  }
-  to {
-    background-position: 100% 100%;
-  }
-}
+// @keyframes bigNuqta {
+//   0% {
+//     opacity: 0.4;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+//   60% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0.4;
+//   }
+//   from {
+//     background-position: 0% 10%;
+//   }
+//   to {
+//     background-position: 0% 100%;
+//   }
+// from {
+//   background-position: 0% 70%;
+// }
+// to {
+//   background-position: 0% 10%;
+// }
+// }
+// @keyframes yulduzli {
+//   0% {
+//     opacity: 0.3;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+//   60% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0.2;
+//   }
+//   from {
+//     background-position: 65% 50%;
+//   }
+//   to {
+//     background-position: 100% 100%;
+//   }
+// }
 
 .hero__box {
   max-width: 547px;

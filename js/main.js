@@ -13,94 +13,94 @@ const threeList = document.querySelector(".three-list");
 // Canvas
 // Canvas
 
-const canvas = document.getElementById("sandbox");
+// const canvas = document.getElementById("sandbox");
 
-canvas.width = 1390;
-canvas.height = 690;
-if (window.matchMedia("(max-width: 1325px)").matches) {
-  canvas.width = 1200;
-  canvas.height = 690;
-}
-if (window.matchMedia("(max-width: 1300px)").matches) {
-  canvas.width = 1170;
-}
-if (window.matchMedia("(max-width: 1170px)").matches) {
-  canvas.width = 1050;
-}
-if (window.matchMedia("(max-width: 1050px)").matches) {
-  canvas.width = 970;
-}
+// canvas.width = 1390;
+// canvas.height = 690;
+// if (window.matchMedia("(max-width: 1325px)").matches) {
+//   canvas.width = 1200;
+//   canvas.height = 690;
+// }
+// if (window.matchMedia("(max-width: 1300px)").matches) {
+//   canvas.width = 1170;
+// }
+// if (window.matchMedia("(max-width: 1170px)").matches) {
+//   canvas.width = 1050;
+// }
+// if (window.matchMedia("(max-width: 1050px)").matches) {
+//   canvas.width = 970;
+// }
 
-if (window.matchMedia("(max-width: 970px)").matches) {
-  canvas.width = 900;
-}
+// if (window.matchMedia("(max-width: 970px)").matches) {
+//   canvas.width = 900;
+// }
 
-if (window.matchMedia("(max-width: 900px)").matches) {
-  canvas.width = 810;
-}
-if (window.matchMedia("(max-width: 810px)").matches) {
-  canvas.width = 730;
-}
-if (window.matchMedia("(max-width: 730px)").matches) {
-  canvas.width = 640;
-}
+// if (window.matchMedia("(max-width: 900px)").matches) {
+//   canvas.width = 810;
+// }
+// if (window.matchMedia("(max-width: 810px)").matches) {
+//   canvas.width = 730;
+// }
+// if (window.matchMedia("(max-width: 730px)").matches) {
+//   canvas.width = 640;
+// }
 
-const ctx = canvas.getContext("2d");
+// const ctx = canvas.getContext("2d");
 
-function Circle(x, y, r, c) {
-  this.x = x;
-  this.y = y;
-  this.r = r;
-  this.c = c;
+// function Circle(x, y, r, c) {
+//   this.x = x;
+//   this.y = y;
+//   this.r = r;
+//   this.c = c;
 
-  this.dx = Math.random() * 4 + 1;
-  this.dx *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
-  this.dy = Math.random() * 4 + 1;
-  this.dx *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
+//   this.dx = Math.random() * 4 + 1;
+//   this.dx *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
+//   this.dy = Math.random() * 4 + 1;
+//   this.dx *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
 
-  this.draw = function () {
-    ctx.beginPath();
-    ctx.fillStyle = this.c;
-    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-    ctx.fill();
-  };
-  this.animate = function () {
-    this.x += this.dx;
-    this.y += this.dy;
+//   this.draw = function () {
+//     ctx.beginPath();
+//     ctx.fillStyle = this.c;
+//     ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+//     ctx.fill();
+//   };
+//   this.animate = function () {
+//     this.x += this.dx;
+//     this.y += this.dy;
 
-    if (this.x + this.r > canvas.width || this.x - this.r < 0) {
-      this.dx = -this.dx;
-    }
-    if (this.y + this.r > canvas.height || this.y - this.r < 0) {
-      this.dy = -this.dy;
-    }
-    this.draw();
-  };
-}
+//     if (this.x + this.r > canvas.width || this.x - this.r < 0) {
+//       this.dx = -this.dx;
+//     }
+//     if (this.y + this.r > canvas.height || this.y - this.r < 0) {
+//       this.dy = -this.dy;
+//     }
+//     this.draw();
+//   };
+// }
 
-const Balls = [];
-for (let i = 0; i < 50; i++) {
-  let r = Math.floor(Math.random() * 30) + 15;
-  let x = Math.random() * (canvas.width - r * 2) + r;
-  let y = Math.random() * (canvas.width - r * 2) + r;
-  let c = "#FF552D";
-  Balls.push(new Circle(x, y, r, c));
-}
+// const Balls = [];
+// for (let i = 0; i < 50; i++) {
+//   let r = Math.floor(Math.random() * 30) + 15;
+//   let x = Math.random() * (canvas.width - r * 2) + r;
+//   let y = Math.random() * (canvas.width - r * 2) + r;
+//   let c = "#FF552D";
+//   Balls.push(new Circle(x, y, r, c));
+// }
 
-canvas.addEventListener("click", (e) => {
-  let r = Math.floor(Math.random() * 30) + 15;
-  Balls.push(new Circle(e.clientX, e.clientY, r, "blue"));
-});
+// canvas.addEventListener("click", (e) => {
+//   let r = Math.floor(Math.random() * 30) + 15;
+//   Balls.push(new Circle(e.clientX, e.clientY, r, "blue"));
+// });
 
-function update() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+// function update() {
+//   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  for (let i = 0; i < Balls.length; i++) {
-    Balls[i].animate();
-  }
-  requestAnimationFrame(update);
-}
-update();
+//   for (let i = 0; i < Balls.length; i++) {
+//     Balls[i].animate();
+//   }
+//   requestAnimationFrame(update);
+// }
+// update();
 // Canvas
 // Canvas
 
