@@ -14,8 +14,37 @@ const threeList = document.querySelector(".three-list");
 // Canvas
 
 const canvas = document.getElementById("sandbox");
-canvas.width = 1500;
-canvas.height = 760;
+
+canvas.width = 1390;
+canvas.height = 690;
+if (window.matchMedia("(max-width: 1325px)").matches) {
+  canvas.width = 1200;
+  canvas.height = 690;
+}
+if (window.matchMedia("(max-width: 1300px)").matches) {
+  canvas.width = 1170;
+}
+if (window.matchMedia("(max-width: 1170px)").matches) {
+  canvas.width = 1050;
+}
+if (window.matchMedia("(max-width: 1050px)").matches) {
+  canvas.width = 970;
+}
+
+if (window.matchMedia("(max-width: 970px)").matches) {
+  canvas.width = 900;
+}
+
+if (window.matchMedia("(max-width: 900px)").matches) {
+  canvas.width = 810;
+}
+if (window.matchMedia("(max-width: 810px)").matches) {
+  canvas.width = 730;
+}
+if (window.matchMedia("(max-width: 730px)").matches) {
+  canvas.width = 640;
+}
+
 const ctx = canvas.getContext("2d");
 
 function Circle(x, y, r, c) {
