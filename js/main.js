@@ -7,6 +7,76 @@ const elXizmatItms = document.querySelectorAll(".xizmalar-text-items");
 const oneList = document.querySelector(".one-list");
 const twooList = document.querySelector(".twoo-list");
 const threeList = document.querySelector(".three-list");
+// Canvas
+// Canvas
+
+// Canvas
+// Canvas
+
+const canvas = document.getElementById("sandbox");
+canvas.width = 1500;
+canvas.height = 760;
+const ctx = canvas.getContext("2d");
+
+function Circle(x, y, r, c) {
+  this.x = x;
+  this.y = y;
+  this.r = r;
+  this.c = c;
+
+  this.dx = Math.random() * 4 + 1;
+  this.dx *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
+  this.dy = Math.random() * 4 + 1;
+  this.dx *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
+
+  this.draw = function () {
+    ctx.beginPath();
+    ctx.fillStyle = this.c;
+    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+    ctx.fill();
+  };
+  this.animate = function () {
+    this.x += this.dx;
+    this.y += this.dy;
+
+    if (this.x + this.r > canvas.width || this.x - this.r < 0) {
+      this.dx = -this.dx;
+    }
+    if (this.y + this.r > canvas.height || this.y - this.r < 0) {
+      this.dy = -this.dy;
+    }
+    this.draw();
+  };
+}
+
+const Balls = [];
+for (let i = 0; i < 50; i++) {
+  let r = Math.floor(Math.random() * 30) + 15;
+  let x = Math.random() * (canvas.width - r * 2) + r;
+  let y = Math.random() * (canvas.width - r * 2) + r;
+  let c = "#FF552D";
+  Balls.push(new Circle(x, y, r, c));
+}
+
+canvas.addEventListener("click", (e) => {
+  let r = Math.floor(Math.random() * 30) + 15;
+  Balls.push(new Circle(e.clientX, e.clientY, r, "blue"));
+});
+
+function update() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  for (let i = 0; i < Balls.length; i++) {
+    Balls[i].animate();
+  }
+  requestAnimationFrame(update);
+}
+update();
+// Canvas
+// Canvas
+
+// Canvas
+// Canvas
 
 elList.addEventListener("click", (evt) => {
   elItems.forEach((item) => {
