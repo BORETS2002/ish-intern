@@ -47,6 +47,7 @@
   align-items: flex-start;
 }
 .qisqacha__items {
+  max-width: 145px;
   position: relative;
   font-family: "Poppins";
   font-style: normal;
@@ -55,69 +56,27 @@
   line-height: 124.02%;
   text-align: center;
   color: #ffffff;
-  &:nth-child(2) {
-    // margin-right: 120px;
-    // margin-left: 123px;
-  }
-  &:nth-child(3) {
-    // margin-right: 148px;
-  }
 }
 .qisqacha__items::before {
   content: "";
   display: block;
   width: 109px;
   height: 109px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url("/images/2plus.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  // margin-right: auto;
-  // margin-left: auto;
-  // margin-bottom: 24px;
-  // padding-top: 16px;
-  // font-style: normal;
-  // font-weight: 700;
-  // font-size: 48px;
-  // line-height: 108.52%;
-  // color: #ffffff;
-  // background: #ff552d;
-  // box-shadow: 0px 0px 26px 2px #ffffff;
-  // border-radius: 330px;
 }
 .qisqacha__items:nth-child(2):before {
-  background-image: url("/images/8dankop.svg");
-
-  // padding-top: 8px;
-  // margin-bottom: 47px;
-  // content: "8";
+  background-image: url("/images/sakkiz.svg");
 }
 .qisqacha__items:nth-child(3):before {
   background-image: url("/images/100foiz.svg");
-
-  // padding-top: 25px;
-  // content: " 100% ";
-  // font-size: 36px;
 }
 .qisqacha__items:nth-child(4):before {
-  background-image: url("/images/10plus.svg");
-
-  // padding-top: 10px;
-  // content: " 10+";
-
-  // font-size: 18px;
+  background-image: url("/images/onpLus.svg");
 }
-// .qisqacha__spancha {
-//   position: absolute;
-//   top: 64px;
-//   right: calc(25%);
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: 148.52%;
-//   text-align: center;
-
-//   color: #ffffff;
-// }
 
 @media only screen and (max-width: 1124px) {
   .qisqacha__big-text {

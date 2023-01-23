@@ -450,7 +450,7 @@ body {
 }
 
 .header__logo-img {
-  max-width: 185px;
+  max-width: 159px;
 }
 
 .header__list {
@@ -541,7 +541,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  margin-right: 37px;
+  margin-right: 27px;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -558,7 +558,7 @@ body {
   margin-right: 10px;
   background-image: url("/images/bayroq-uzbekistan.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .header__tel {
@@ -865,6 +865,7 @@ body {
 }
 
 .qisqacha__items {
+  max-width: 145px;
   position: relative;
   font-family: "Poppins";
   font-style: normal;
@@ -874,18 +875,21 @@ body {
   text-align: center;
   color: #ffffff;
 }
+
 .qisqacha__items::before {
   content: "";
   display: block;
   width: 109px;
   height: 109px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url("/images/2plus.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .qisqacha__items:nth-child(2):before {
-  background-image: url("/images/8dankop.svg");
+  background-image: url("/images/sakkiz.svg");
 }
 
 .qisqacha__items:nth-child(3):before {
@@ -893,7 +897,7 @@ body {
 }
 
 .qisqacha__items:nth-child(4):before {
-  background-image: url("/images/10plus.svg");
+  background-image: url("/images/onpLus.svg");
 }
 
 @media only screen and (max-width: 1124px) {
@@ -1815,7 +1819,7 @@ body {
 }
 .form__button {
   display: block;
-  max-width: 237px;
+  max-width: 290px;
   margin-left: auto;
   margin-top: 40px;
   padding: 13px 35px;
