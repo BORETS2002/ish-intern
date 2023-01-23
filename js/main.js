@@ -97,8 +97,8 @@ const data = {
       "10dan ortiq Muvaffaqqiyatli loyihalar",
     ],
     xizLeft: [
-      "Web sayt tuzish",
       "Mobile ilovalar tuzish",
+      "Web sayt tuzish",
       "Dizaynerlik xizmatlari",
     ],
     xizmatRigth: [
@@ -177,8 +177,8 @@ const data = {
       "Более 10 успешных проектов",
     ],
     xizLeft: [
-      "Создание веб-сайта",
       "Создание мобильных приложений",
+      "Создание веб-сайта",
       "Дизайнерские услуги",
     ],
     xizmatRigth: [
