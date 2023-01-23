@@ -987,6 +987,8 @@ body {
   font-size: 20px;
   text-align: center;
   color: #000000;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 33px;
 }
 .xizmatlar__itms::before {
   content: "";
@@ -1007,8 +1009,10 @@ body {
   border-radius: 33px;
 }
 .xizmatlar__itms:active {
-  -webkit-box-shadow: 5px 6px 8px rgba(255, 85, 45, 0.25);
-          box-shadow: 5px 6px 8px rgba(255, 85, 45, 0.25);
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 5px 4px 4px rgba(255, 85, 45, 0.25);
+          box-shadow: 5px 4px 4px rgba(255, 85, 45, 0.25);
+  border-radius: 33px;
 }
 .xizmatlar__itms:nth-child(2):before {
   width: 100px;

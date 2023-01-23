@@ -52,9 +52,6 @@ const biznesman = document.querySelector(".haqimizda__bizesman");
 const loyihaSvg = document.querySelector(".haqimizda__loyiha");
 const malakaliSvg = document.querySelector(".haqimizda__malakali");
 
-console.log();
-
-console.log(footeroptom[0].outerText);
 const data = {
   uzb: {
     three: [
@@ -111,7 +108,6 @@ const data = {
       "Turistik korxona uchun sayt",
       "SEO xizmati",
       "Qurilish korxonasi uchun sayt",
-
       "Internet magazin",
       "Taksi ilovasi",
       "Restoranlar uchun ilova",
@@ -244,6 +240,13 @@ LangBotton.addEventListener("click", (evt) => {
     XizmatRight.forEach((item, i) => {
       item.textContent = data.rus.xizmatRigth[i];
     });
+
+    // for (let i = 0; i < XizmatRight.length; i++) {
+
+    //   XizmatRight[i].textContent = data.rus.xizmatRigth[i];
+    //   console.log(data.rus.xizmatRigth[i]);
+    // }
+
     portsmall.forEach((item, i) => {
       item.textContent = data.rus.portsmaill[i];
     });
@@ -261,7 +264,6 @@ LangBotton.addEventListener("click", (evt) => {
     });
 
     footeroptom.forEach((item, i) => {
-      console.log(data.rus.three[i]);
       item.textContent = data.uzb.three[i];
     });
 
@@ -334,6 +336,7 @@ LangBotton.addEventListener("click", (evt) => {
     XizmatlarItmsLeft.forEach((item, i) => {
       item.textContent = data.uzb.xizLeft[i];
     });
+
     XizmatRight.forEach((item, i) => {
       item.textContent = data.uzb.xizmatRigth[i];
     });
