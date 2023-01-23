@@ -446,11 +446,10 @@ body {
 
 .header__logo-href {
   display: inline-block;
-  margin-right: 64px;
 }
 
 .header__logo-img {
-  max-width: 159px;
+  max-width: 196px;
 }
 
 .header__list {
@@ -879,8 +878,8 @@ body {
 .qisqacha__items::before {
   content: "";
   display: block;
-  width: 109px;
-  height: 109px;
+  width: 129px;
+  height: 130px;
   margin-right: auto;
   margin-left: auto;
   background-image: url("/images/2plus.svg");

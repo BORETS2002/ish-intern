@@ -48,6 +48,12 @@ const footerQushimcha = document.querySelector(".footer__qushimcha-text");
 const footerkompList = document.querySelectorAll(".footer__kompaniya-href");
 const footeroptom = document.querySelectorAll(".footer__items-href");
 
+const biznesman = document.querySelector(".haqimizda__bizesman");
+const loyihaSvg = document.querySelector(".haqimizda__loyiha");
+const malakaliSvg = document.querySelector(".haqimizda__malakali");
+
+console.log();
+
 console.log(footeroptom[0].outerText);
 const data = {
   uzb: {
@@ -131,7 +137,7 @@ const data = {
     ],
     xizmatlarBig: "Bizning Xizmatlarimiz",
     elMiniText:
-      "     Bu olamda mavjudligingizni isbotlang! Veb-sayt — kompaniyangiz imidji. Oʻz biznesingizni internet tarmoqlarida sifatli targʻib qiling. Bu orqali mijozlaringiz soni oshadi. Axborot almashinuvi yuzaga keladi. Xizmat koʻrsatish sifati oshadi.",
+      "  Hozirgi kunda O’zbekistondagi 70% internet foydalanuvchilari internetga Androidli mobil qurilmalar yordamida chiqishmoqda. Agar siz doimo mijozlaringiz “kaftida” bo’lishni hohlasangiz, u holda biznes uchun mobil ilova – aynan sizga uchun kerak. Android uchun mobil ilovaga buyurtma berib, mobile-texnologiyaning biznesingiz uchun beradigan imkoniyatlaridan foydalaning.",
   },
   rus: {
     three: [
@@ -212,10 +218,9 @@ const data = {
     twoo: ["насчет нас", "портфолио"],
     xizmatlarBig: "Наши услуги ",
     elMiniText:
-      "Докажи свое существование в этом мире! Сайт – это имидж вашей компании. Продвигайте свой бизнес в Интернете. Это увеличит количество ваших клиентов. Происходит обмен информацией. Качество обслуживания повысится.",
+      "В настоящее время 70% пользователей Интернета в Узбекистане выходят в Интернет с помощью мобильных устройств Android. Если вы хотите всегда быть «на ладони» у своих клиентов, то мобильное приложение для бизнеса — это именно то, что вам нужно. Закажите мобильное приложение для Android и воспользуйтесь возможностями мобильных технологий для своего бизнеса.",
   },
 };
-console.log(data.rus.Murojaat);
 
 LangBotton.addEventListener("click", (evt) => {
   evt.preventDefault();
@@ -248,7 +253,9 @@ LangBotton.addEventListener("click", (evt) => {
     savollaraAcJavob.forEach((item, i) => {
       item.textContent = data.rus.acardionJavob[i];
     });
-
+    biznesman.src = "/images/besplatna.svg";
+    loyihaSvg.src = "/images/odelna.svg";
+    malakaliSvg.src = "/images/komanda.svg";
     footerkompList.forEach((item, i) => {
       item.textContent = data.rus.twoo[i];
     });
@@ -292,6 +299,9 @@ LangBotton.addEventListener("click", (evt) => {
           item.classList.remove("aktiv-class");
         }
       });
+      if (evt.target.matches(".xizmatlar__itms")) {
+        evt.target.classList.toggle("aktiv-class");
+      }
 
       if (evt.target.value == 1) {
         // elBigText.textContent = "ilova";
@@ -302,7 +312,7 @@ LangBotton.addEventListener("click", (evt) => {
       if (evt.target.value == 3) {
         // elBigText.textContent = "Web Saytlar";
         elMiniText.textContent =
-          " В настоящее время 70% пользователей Интернета в Узбекистане выходят в Интернет с помощью мобильных устройств Android. Если вы хотите всегда быть «на ладони» у своих клиентов, то мобильное приложение для бизнеса — это именно то, что вам нужно. Закажите мобильное приложение для Android и воспользуйтесь возможностями мобильных технологий для своего бизнеса.";
+          "  Докажи свое существование в этом мире! Сайт – это имидж вашей компании. Продвигайте свой бизнес в Интернете. Это увеличит количество ваших клиентов. Происходит обмен информацией. Качество обслуживания повысится.";
       }
       if (evt.target.value == 4) {
         // elBigText.textContent = "Web Dizayn";
@@ -342,6 +352,10 @@ LangBotton.addEventListener("click", (evt) => {
     });
     footeroptom.forEach((item, i) => {
       item.textContent = data.rus.three[i];
+
+      biznesman.src = "/images/biznesingiz.svg";
+      loyihaSvg.src = "/images/malakali.svg";
+      malakaliSvg.src = "/images/har-bir-loiha.svg";
     });
 
     aloqaBig.textContent = "Biz bilan bog’laning ";
@@ -378,6 +392,9 @@ LangBotton.addEventListener("click", (evt) => {
           item.classList.remove("aktiv-class");
         }
       });
+      if (evt.target.matches(".xizmatlar__itms")) {
+        evt.target.classList.toggle("aktiv-class");
+      }
 
       if (evt.target.value == 1) {
         // elBigText.textContent = "ilova";
