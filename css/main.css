@@ -625,6 +625,15 @@ body {
             align-items: flex-start;
   }
 }
+.canvas {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  height: 80%;
+  width: 100%;
+  pointer-events: none;
+}
+
 .hero {
   padding-top: 80px;
   padding-bottom: 915px;
@@ -725,8 +734,8 @@ body {
   }
 }
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 8px;
+  width: 0px;
+  height: 0px;
   border-radius: 20px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 174, 26, 0.3)));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 174, 26, 0.3) 100%);
@@ -1093,6 +1102,10 @@ body {
   text-align: center;
 }
 
+.carusel__wrapper {
+  max-width: 1300px;
+}
+
 .portfolio__list {
   list-style: none;
   padding: 0;
@@ -1108,7 +1121,7 @@ body {
 }
 
 .portfolio__items {
-  margin-right: 47px;
+  margin-right: 187px;
 }
 
 .portfolio__img {

@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/images/elipsez.svg" />
   
+    <!-- SLiCK -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- SLiCK -->
+   
+
   <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
   rel="stylesheet"
@@ -98,6 +104,7 @@
   <section class="hero" id="hero">
     <div class=" hero__mini-animatiya-big-box"></div>
     <!-- <div class=" hero__mini-animatiya-box">   -->
+<canvas class="canvas" id="canvas" width="1324" height="147"></canvas>
       
     </div>  
     
@@ -271,9 +278,11 @@
     <div class="portfolio" id="Portfolio">
       <div class="prtfolio__box">
         <h3 class="portfolio__big-text">Bizning portfolio</h3>
-        <ul class="portfolio__list">
-          
-          <li class="portfolio__items">
+        <div class="carusel__wrapper">
+
+        <div class="portfolio__list">
+           
+          <div class="portfolio__items">
             <a class="href-box" href="https://play.google.com/store/apps/details?id=uz.onveti.mantiqiysavollar" target="blank">
               <img
               class="portfolio__img img-invalid"
@@ -295,10 +304,10 @@
                 
               </p>
             </div>
-          </li>
+          </div>
           
           
-          <li class="portfolio__items">
+          <div class="portfolio__items">
             <a href="https://play.google.com/store/apps/details?id=uz.onveti.mantiqiysavollar" target="blank">
               <img
               class="portfolio__img"
@@ -321,9 +330,9 @@
                 
               </p>
             </div>
-          </li>
+          </div>
           
-          <li class="portfolio__items">
+          <div class="portfolio__items">
             <a href="https://play.google.com/store/apps/details?id=uz.onveti.krilllotin" target="blank">
               
               <img
@@ -345,9 +354,9 @@
                 
               </p>
             </div>
-          </li>
+          </div>
           
-          <li class="portfolio__items">
+          <div class="portfolio__items">
             <a class="href-box" href="https://play.google.com/store/apps/details?id=uz.onveti.halolpay.new" target="blank">
               <img
               class="portfolio__img img-invalid"
@@ -369,12 +378,9 @@
                 Internet to'plamlar, IPTV to'lovlarini qulay va tez amalga oshirishingiz mumkin.
               </p>
             </div>
-          </li>
-          
-          
-          
-          
-          <li class="portfolio__items">
+          </div>
+   
+          <div class="portfolio__items">
             <a class="href-box" href="https://play.google.com/store/apps/details?id=uz.asxab.salawat" target="blank">
               <img
               class="portfolio__img img-invalid"
@@ -395,7 +401,7 @@
                 hisoblab boradi.
               </p>
             </div>
-          </li>
+          </div>
         </ul>
         
         <!-- <span class="pachination">
@@ -406,6 +412,8 @@
           <span class="pachination__span"></span>
         </span> -->
       </div>
+    </div>
+
     </div> 
   </section> 
   
@@ -783,12 +791,17 @@
 </div>
 </footer>  
 
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="/slick/slick.min.js"></script>
+
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 crossorigin="anonymous"
 >
 </script>
+<script src="/js/particl.js"></script>
 <script src="/js/main.js"></script>
 </body>
 </html>

@@ -156,7 +156,9 @@
   color: #ff552d;
   text-align: center;
 }
-
+.carusel__wrapper {
+  max-width: 1300px;
+}
 .portfolio__list {
   list-style: none;
   padding: 0;
@@ -169,7 +171,7 @@
   // scroll-snap-align: inherit;
 }
 .portfolio__items {
-  margin-right: 47px;
+  margin-right: 187px;
 }
 .portfolio__img {
   width: 400px;

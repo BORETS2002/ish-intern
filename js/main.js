@@ -52,6 +52,24 @@ const biznesman = document.querySelector(".haqimizda__bizesman");
 const loyihaSvg = document.querySelector(".haqimizda__loyiha");
 const malakaliSvg = document.querySelector(".haqimizda__malakali");
 
+// $(".portfolio__list").slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+// });
+$(".portfolio__list").slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1500,
+});
+// $(".portfolio__list").slick({
+//   lazyLoad: "ondemand",
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+// });
+
 const data = {
   uzb: {
     three: [
@@ -572,3 +590,10 @@ elSiteheaderToggleBtn.addEventListener("click", function () {
   elHeader.classList.toggle("site-header__open");
   elsiteNav.classList.toggle("site-hader__open");
 });
+
+// $(".portfolio__list").slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+// });
