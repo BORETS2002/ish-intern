@@ -52,18 +52,13 @@ const biznesman = document.querySelector(".haqimizda__bizesman");
 const loyihaSvg = document.querySelector(".haqimizda__loyiha");
 const malakaliSvg = document.querySelector(".haqimizda__malakali");
 
-// $(".portfolio__list").slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 2000,
-// });
 $(".portfolio__list").slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1500,
 });
+
 // $(".portfolio__list").slick({
 //   lazyLoad: "ondemand",
 //   slidesToShow: 3,
@@ -437,106 +432,6 @@ LangBotton.addEventListener("click", (evt) => {
   }
 });
 
-// Canvas
-// Canvas
-
-// Canvas
-// Canvas
-
-// const canvas = document.getElementById("sandbox");
-
-// canvas.width = 1390;
-// canvas.height = 690;
-// if (window.matchMedia("(max-width: 1325px)").matches) {
-//   canvas.width = 1200;
-//   canvas.height = 690;
-// }
-// if (window.matchMedia("(max-width: 1300px)").matches) {
-//   canvas.width = 1170;
-// }
-// if (window.matchMedia("(max-width: 1170px)").matches) {
-//   canvas.width = 1050;
-// }
-// if (window.matchMedia("(max-width: 1050px)").matches) {
-//   canvas.width = 970;
-// }
-
-// if (window.matchMedia("(max-width: 970px)").matches) {
-//   canvas.width = 900;
-// }
-
-// if (window.matchMedia("(max-width: 900px)").matches) {
-//   canvas.width = 810;
-// }
-// if (window.matchMedia("(max-width: 810px)").matches) {
-//   canvas.width = 730;
-// }
-// if (window.matchMedia("(max-width: 730px)").matches) {
-//   canvas.width = 640;
-// }
-
-// const ctx = canvas.getContext("2d");
-
-// function Circle(x, y, r, c) {
-//   this.x = x;
-//   this.y = y;
-//   this.r = r;
-//   this.c = c;
-
-//   this.dx = Math.random() * 4 + 1;
-//   this.dx *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
-//   this.dy = Math.random() * 4 + 1;
-//   this.dx *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
-
-//   this.draw = function () {
-//     ctx.beginPath();
-//     ctx.fillStyle = this.c;
-//     ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-//     ctx.fill();
-//   };
-//   this.animate = function () {
-//     this.x += this.dx;
-//     this.y += this.dy;
-
-//     if (this.x + this.r > canvas.width || this.x - this.r < 0) {
-//       this.dx = -this.dx;
-//     }
-//     if (this.y + this.r > canvas.height || this.y - this.r < 0) {
-//       this.dy = -this.dy;
-//     }
-//     this.draw();
-//   };
-// }
-
-// const Balls = [];
-// for (let i = 0; i < 50; i++) {
-//   let r = Math.floor(Math.random() * 30) + 15;
-//   let x = Math.random() * (canvas.width - r * 2) + r;
-//   let y = Math.random() * (canvas.width - r * 2) + r;
-//   let c = "#FF552D";
-//   Balls.push(new Circle(x, y, r, c));
-// }
-
-// canvas.addEventListener("click", (e) => {
-//   let r = Math.floor(Math.random() * 30) + 15;
-//   Balls.push(new Circle(e.clientX, e.clientY, r, "blue"));
-// });
-
-// function update() {
-//   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-//   for (let i = 0; i < Balls.length; i++) {
-//     Balls[i].animate();
-//   }
-//   requestAnimationFrame(update);
-// }
-// update();
-// Canvas
-// Canvas
-
-// Canvas
-// Canvas
-
 elList.addEventListener("click", (evt) => {
   elItems.forEach((item) => {
     if (item.classList[1]) {
@@ -570,7 +465,6 @@ elList.addEventListener("click", (evt) => {
     threeList.classList.add("d-none");
   }
   if (evt.target.value == 4) {
-    // elBigText.textContent = "Web Dizayn";
     elMiniText.textContent =
       "UX/UI dizaynerining maqsadi foydalanuvchi interfeysini ba'zi mantiqiy nuqtaga olib kelishdir. Shunday qilish kerakki, foydalanuvchi o’z maqsadiga erishsin.UX/UI dizayn - bu har qanday foydalanuvchi interfeyslarini foydalanishga qulay qilish va tashqi ko’rinishini hisobga olib loyihalashtirish hisoblanadi.";
 
@@ -590,10 +484,3 @@ elSiteheaderToggleBtn.addEventListener("click", function () {
   elHeader.classList.toggle("site-header__open");
   elsiteNav.classList.toggle("site-hader__open");
 });
-
-// $(".portfolio__list").slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 2000,
-// });
